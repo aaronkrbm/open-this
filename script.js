@@ -147,8 +147,8 @@ yesBtn.addEventListener("click", () => {
 
 // ====== NO BUTTON MOVING ======
 noBtn.addEventListener("click", () => {
-    noBtn.style.position = "absolute"; // moves it relative to btnGroup
-    // Random position inside the button group
-    noBtn.style.left = Math.random() * 70 + "%";
-    noBtn.style.top = Math.random() * 70 + "%";
+    noBtn.style.position = "fixed";
+    noBtn.style.width = "auto"; // prevent stretching
+    noBtn.style.left = Math.random() * (window.innerWidth - noBtn.offsetWidth) + "px";
+    noBtn.style.top = Math.random() * (window.innerHeight - noBtn.offsetHeight) + "px";
 });
