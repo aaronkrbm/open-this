@@ -162,7 +162,7 @@ body {
 
     .postcard {
         width: 90%;
-        height: auto;
+        height: 60%;
         aspect-ratio: 4 / 3;
     }
 
@@ -196,6 +196,7 @@ body {
         font-size: 24px;
     }
 }
+
 
 
 
