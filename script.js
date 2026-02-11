@@ -147,8 +147,14 @@ yesBtn.addEventListener("click", () => {
 
 // ====== NO BUTTON MOVING ======
 noBtn.addEventListener("click", () => {
-    noBtn.style.position = "fixed";
-    noBtn.style.width = "auto"; // prevent stretching
-    noBtn.style.left = Math.random() * (window.innerWidth - noBtn.offsetWidth) + "px";
-    noBtn.style.top = Math.random() * (window.innerHeight - noBtn.offsetHeight) + "px";
+
+    const container = postcardScreen.querySelector(".postcard");
+
+    const maxX = container.clientWidth - noBtn.offsetWidth;
+    const maxY = container.clientHeight - noBtn.offsetHeight;
+
+    noBtn.style.position = "absolute";
+
+    noBtn.style.left = Math.random() * maxX + "px";
+    noBtn.style.top = Math.random() * maxY + "px";
 });
