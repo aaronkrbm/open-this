@@ -79,7 +79,7 @@ body {
 /* POSTCARD */
 .postcard {
     width: 400px;
-    height: 400px;
+    height: 500px;
     perspective: 1000px;
     position: relative;
 }
@@ -196,6 +196,7 @@ body {
         font-size: 24px;
     }
 }
+
 
 
 
